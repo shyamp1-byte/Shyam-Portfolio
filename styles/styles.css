@@ -7,7 +7,7 @@
 html, body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    background-image: url('/images/sphere.jpg');
+    background-image: url('https://storage.googleapis.com/shyampedibhotla/images/sphere.jpg');
     background-size: cover;
     background-position: center center;
     background-color: #fff;
@@ -159,7 +159,7 @@ footer {
 }
 
 body.dark-mode {
-    background-image: url('/images/sphere2.jpg');
+    background-image: url('https://storage.googleapis.com/shyampedibhotla/images/sphere2.jpg');
     background-color: #222;
     color: white;
 }
@@ -259,7 +259,7 @@ body.dark-mode .about a:hover {
 }
 
 body.dark-mode {
-    background-image: url('/images/sphere2.jpg');
+    background-image: url('https://storage.googleapis.com/shyampedibhotla/images/sphere2.jpg');
     background-color: #222;
     color: white;
 }
@@ -453,3 +453,4 @@ body {
     transform: translate(-50%, -50%);
     transition: transform 0.1s linear;
 }
+
