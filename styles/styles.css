@@ -437,3 +437,18 @@ header {
         margin-top: 10px;
     }
 }
+
+body {
+    cursor: none; 
+}
+
+.cursor {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #000000;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s linear;
+}
