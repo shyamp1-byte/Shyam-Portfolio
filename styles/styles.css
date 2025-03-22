@@ -10,20 +10,14 @@ html, body {
     background-image: url('https://storage.googleapis.com/shyampedibhotla/images/sphere.jpg');
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     background-color: #fff;
     color: #000;
     overflow-x: hidden;
+    overflow: hidden;
     transition: background 0.3s ease, color 0.3s ease;
     display: flex;
     flex-direction: column;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    cursor: url('https://cdn.iconscout.com/icon/free/png-256/cursor-2137464-1798139.png'), auto;
 }
 
 header {
@@ -104,15 +98,6 @@ nav ul li a:hover {
     }
 }
 
-footer {
-    color: #000;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    width: 100%;
-    margin-top: auto;
-}
-
 /* About Section Styling */
 .about {
     text-align: center;
@@ -123,7 +108,7 @@ footer {
 }
 
 .about h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -132,10 +117,10 @@ footer {
 }
 
 .about p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     line-height: 1.8;
     margin-top: 20px;
-    max-width: 1300px;
+    max-width: 3000px;
     margin-left: auto;
     margin-right: auto;
     transition: color 0.3s ease;
@@ -143,8 +128,8 @@ footer {
 }
 
 .profile-pic {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     margin-top: 30px;
@@ -454,3 +439,46 @@ body {
     transition: transform 0.1s linear;
 }
 
+.about ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about ul li {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+body.dark-mode .about ul {
+    color: white;
+}
+
+.about-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.profile-pic {
+    align-self: flex-start;
+    margin-right: 1px;
+}
+
+.about-section h2,
+.profile-pic {
+    margin-left: 0;
+}
+
+.about-section p {
+    flex: 1;
+    text-align: right;
+}
+
+.about-section ul {
+    flex: 1;
+    text-align: left;
+}
